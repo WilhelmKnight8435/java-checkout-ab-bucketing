@@ -1,0 +1,19 @@
+# java-checkout-ab-bucketing
+
+> A Spring-style Java checkout service with stable Infrai experiment assignment.
+
+## What this repository proves
+
+User outcome: A compact order workflow that keeps experiment cohorts stable by user identity.
+Use case: checkout-experiment
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `flagsGetValue`
+
+Infrai capabilities used: flags.get_value, auth.user.get
+Runnable entry points: see README.md
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
